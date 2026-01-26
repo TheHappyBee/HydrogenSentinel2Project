@@ -1,0 +1,1895 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_62c01cfc6b28e3eb09cc43874f5e6390 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_62c01cfc6b28e3eb09cc43874f5e6390" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_62c01cfc6b28e3eb09cc43874f5e6390 = L.map(
+                "map_62c01cfc6b28e3eb09cc43874f5e6390",
+                {
+                    center: [44.11740894550006, 99.2373865998334],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_57a691e9476f31f9cd104978d08e38b9 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_57a691e9476f31f9cd104978d08e38b9.addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+            var circle_marker_0c2c8c84669237dfbd4e615326e35d6f = L.circleMarker(
+                [49.8409, 73.1019],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.100637776342026, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_22d5e51c63d2069277f05d3159a83817 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_289c4b0b8dfd04540f247b86dae198fb = $(`<div id="html_289c4b0b8dfd04540f247b86dae198fb" style="width: 100.0%; height: 100.0%;">ID: 4725<br>Mineral: ['_S07SNTL2_Ulexite_HS441_4B_ASDFRa_AREF', '_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.00694307265287641, 0.007204376357344132, 0.00829912691527549, 0.008612993151639589, 0.012579722042753292]<br>H2 ppm: 20</div>`)[0];
+                popup_22d5e51c63d2069277f05d3159a83817.setContent(html_289c4b0b8dfd04540f247b86dae198fb);
+            
+        
+
+        circle_marker_0c2c8c84669237dfbd4e615326e35d6f.bindPopup(popup_22d5e51c63d2069277f05d3159a83817)
+        ;
+
+        
+    
+    
+            var circle_marker_0f62e02ccf85d0cc85ff54530e6c4fcf = L.circleMarker(
+                [49.8333, 73.1667],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.103182164270274, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_66f5345e90068b0ddac475a24228012b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_968a0467384dc0d54377227132ebe476 = $(`<div id="html_968a0467384dc0d54377227132ebe476" style="width: 100.0%; height: 100.0%;">ID: 4726<br>Mineral: ['_S07SNTL2_Ulexite_HS441_4B_ASDFRa_AREF', '_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.0069403492562245565, 0.007344266478914591, 0.00861747456354421, 0.008686573778585418, 0.012897770533784299]<br>H2 ppm: 10</div>`)[0];
+                popup_66f5345e90068b0ddac475a24228012b.setContent(html_968a0467384dc0d54377227132ebe476);
+            
+        
+
+        circle_marker_0f62e02ccf85d0cc85ff54530e6c4fcf.bindPopup(popup_66f5345e90068b0ddac475a24228012b)
+        ;
+
+        
+    
+    
+            var circle_marker_dd0d463d41873ad6333b12d4f2ded974 = L.circleMarker(
+                [42.8472, 74.4871],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0942985746246086, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_385d609f05f663ad0c4f74e3b8af852e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9d6a1481403decd1445b1b2a5fd069b1 = $(`<div id="html_9d6a1481403decd1445b1b2a5fd069b1" style="width: 100.0%; height: 100.0%;">ID: 4727<br>Mineral: ['_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Ulexite_HS441_4B_ASDFRa_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.0067940858983492934, 0.006934410239041182, 0.007466958756222239, 0.008407720499709804, 0.011787321828076031]<br>H2 ppm: 16.6</div>`)[0];
+                popup_385d609f05f663ad0c4f74e3b8af852e.setContent(html_9d6a1481403decd1445b1b2a5fd069b1);
+            
+        
+
+        circle_marker_dd0d463d41873ad6333b12d4f2ded974.bindPopup(popup_385d609f05f663ad0c4f74e3b8af852e)
+        ;
+
+        
+    
+    
+            var circle_marker_5132f3facd1646e2578d150bcc252e5c = L.circleMarker(
+                [56.0963, 74.615],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.123044748715436, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_991244297a5c671b7b60bdc8e73e4d54 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2338ab2e846480300e83a8d4aa9cfdea = $(`<div id="html_2338ab2e846480300e83a8d4aa9cfdea" style="width: 100.0%; height: 100.0%;">ID: 4728<br>Mineral: ['_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Chrysocolla_HS297_4B_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.008049197090605363, 0.008860801758645072, 0.00903346445942418, 0.011346721657821659, 0.01538059358942945]<br>H2 ppm: 21</div>`)[0];
+                popup_991244297a5c671b7b60bdc8e73e4d54.setContent(html_2338ab2e846480300e83a8d4aa9cfdea);
+            
+        
+
+        circle_marker_5132f3facd1646e2578d150bcc252e5c.bindPopup(popup_991244297a5c671b7b60bdc8e73e4d54)
+        ;
+
+        
+    
+    
+            var circle_marker_422f50b54652e7a8da34ec0c219b4655 = L.circleMarker(
+                [42.6858, 74.8668],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.122870409534071, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_9ebd66a48ca597ac28d9f7bd243cebda = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_69c2825fb860f7655ca48f7955ebfba2 = $(`<div id="html_69c2825fb860f7655ca48f7955ebfba2" style="width: 100.0%; height: 100.0%;">ID: 4729<br>Mineral: ['_S07SNTL2_Jadeite_HS343_6_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.007677556716477534, 0.00819452486825199, 0.009083566682695787, 0.01113665091755768, 0.01535880119175895]<br>H2 ppm: 20</div>`)[0];
+                popup_9ebd66a48ca597ac28d9f7bd243cebda.setContent(html_69c2825fb860f7655ca48f7955ebfba2);
+            
+        
+
+        circle_marker_422f50b54652e7a8da34ec0c219b4655.bindPopup(popup_9ebd66a48ca597ac28d9f7bd243cebda)
+        ;
+
+        
+    
+    
+            var circle_marker_093df8be63fcf8a770ca844ecbbd9e57 = L.circleMarker(
+                [54.8264, 75.4721],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.121049663829188, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_ecedcd6a7eb4a3cea850923cad782ab2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a70ed5963b277debc4693402e54069d2 = $(`<div id="html_a70ed5963b277debc4693402e54069d2" style="width: 100.0%; height: 100.0%;">ID: 4730<br>Mineral: ['_S07SNTL2_Jadeite_HS343_6_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.007597083900820889, 0.008110045239699772, 0.009022619541132818, 0.01092931066041852, 0.015131207978648482]<br>H2 ppm: 11.2</div>`)[0];
+                popup_ecedcd6a7eb4a3cea850923cad782ab2.setContent(html_a70ed5963b277debc4693402e54069d2);
+            
+        
+
+        circle_marker_093df8be63fcf8a770ca844ecbbd9e57.bindPopup(popup_ecedcd6a7eb4a3cea850923cad782ab2)
+        ;
+
+        
+    
+    
+            var circle_marker_869b15150e1b146458b8e4b2dc7af2aa = L.circleMarker(
+                [61.0471, 76.1004],
+                {"bubblingMouseEvents": true, "color": "rgb(4,0,250)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(4,0,250)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.126521377642585, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_e239ac547a58b146a19d330f09487173 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e1701db2c027a7d60e08c1e0e96c49e7 = $(`<div id="html_e1701db2c027a7d60e08c1e0e96c49e7" style="width: 100.0%; height: 100.0%;">ID: 4731<br>Mineral: ['_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Chrysocolla_HS297_4B_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.008242043789291296, 0.0089516357686425, 0.010055812339729884, 0.0118654542674463, 0.015815172205323157]<br>H2 ppm: 58</div>`)[0];
+                popup_e239ac547a58b146a19d330f09487173.setContent(html_e1701db2c027a7d60e08c1e0e96c49e7);
+            
+        
+
+        circle_marker_869b15150e1b146458b8e4b2dc7af2aa.bindPopup(popup_e239ac547a58b146a19d330f09487173)
+        ;
+
+        
+    
+    
+            var circle_marker_126774a380fe7007b087c6357ac9b465 = L.circleMarker(
+                [42.6449, 78.1701],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.106812332523716, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_fe6bb22257b9de9998c8a5bddeeb7dad = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5e420bf158bfce8d2c398217cc21486e = $(`<div id="html_5e420bf158bfce8d2c398217cc21486e" style="width: 100.0%; height: 100.0%;">ID: 4732<br>Mineral: ['_S07SNTL2_Ulexite_HS441_4B_ASDFRa_AREF', '_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.0069830969280484075, 0.007402682313245548, 0.008815300599161028, 0.00882025388640909, 0.013351541565464448]<br>H2 ppm: 13.6</div>`)[0];
+                popup_fe6bb22257b9de9998c8a5bddeeb7dad.setContent(html_5e420bf158bfce8d2c398217cc21486e);
+            
+        
+
+        circle_marker_126774a380fe7007b087c6357ac9b465.bindPopup(popup_fe6bb22257b9de9998c8a5bddeeb7dad)
+        ;
+
+        
+    
+    
+            var circle_marker_a1026ca1bfc5baf97cf550b5de92c6e7 = L.circleMarker(
+                [60.8022, 78.5419],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.12394327455878, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_15e3d2aaa46d7cdec1d19336e31841da = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ec398a9351e2d9f37f15ca747efe4cf5 = $(`<div id="html_ec398a9351e2d9f37f15ca747efe4cf5" style="width: 100.0%; height: 100.0%;">ID: 4733<br>Mineral: ['_S07SNTL2_Chrysocolla_HS297_4B_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.007812361775664343, 0.008065540653404223, 0.009103671637353775, 0.010968433566098787, 0.015492909319847528]<br>H2 ppm: 47.3</div>`)[0];
+                popup_15e3d2aaa46d7cdec1d19336e31841da.setContent(html_ec398a9351e2d9f37f15ca747efe4cf5);
+            
+        
+
+        circle_marker_a1026ca1bfc5baf97cf550b5de92c6e7.bindPopup(popup_15e3d2aaa46d7cdec1d19336e31841da)
+        ;
+
+        
+    
+    
+            var circle_marker_b03229a6b32d30aa990846006e34e801 = L.circleMarker(
+                [60.8034, 78.5442],
+                {"bubblingMouseEvents": true, "color": "rgb(5,0,249)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(5,0,249)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.164421234384826, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_9a432a9c3483a98578cad0a42ff478ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_738d19b1b6cc9158b57cc2fb1738270c = $(`<div id="html_738d19b1b6cc9158b57cc2fb1738270c" style="width: 100.0%; height: 100.0%;">ID: 4734<br>Mineral: ['_S07SNTL2_Chrysocolla_HS297_2B_ASDFRb_AREF', '_S07SNTL2_Chrysocolla_HS297_3B_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF', '_S07SNTL2_Chrysocolla_HS297_4B_ASDFRb_AREF']<br>Probability: [0.009408976067004866, 0.012698696481074778, 0.01418471093809886, 0.016924541176688335, 0.020552654298103316]<br>H2 ppm: 86.6</div>`)[0];
+                popup_9a432a9c3483a98578cad0a42ff478ef.setContent(html_738d19b1b6cc9158b57cc2fb1738270c);
+            
+        
+
+        circle_marker_b03229a6b32d30aa990846006e34e801.bindPopup(popup_9a432a9c3483a98578cad0a42ff478ef)
+        ;
+
+        
+    
+    
+            var circle_marker_6681cb023711dd66b5c0e691b5fb0c47 = L.circleMarker(
+                [58.1661, 78.893],
+                {"bubblingMouseEvents": true, "color": "rgb(4,0,250)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(4,0,250)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.125782399916718, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_9519e475a5054e7122881cd29df0c036 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b3c879681dc8e7b2351482de121073b2 = $(`<div id="html_b3c879681dc8e7b2351482de121073b2" style="width: 100.0%; height: 100.0%;">ID: 4735<br>Mineral: ['_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Chrysocolla_HS297_4B_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.008164423995459443, 0.008963058805463461, 0.00955558914212323, 0.011618249492457015, 0.015722799989589694]<br>H2 ppm: 11.2</div>`)[0];
+                popup_9519e475a5054e7122881cd29df0c036.setContent(html_b3c879681dc8e7b2351482de121073b2);
+            
+        
+
+        circle_marker_6681cb023711dd66b5c0e691b5fb0c47.bindPopup(popup_9519e475a5054e7122881cd29df0c036)
+        ;
+
+        
+    
+    
+            var circle_marker_6d6f347b2b222bec69c8d4069998ad81 = L.circleMarker(
+                [56.9317, 85.8055],
+                {"bubblingMouseEvents": true, "color": "rgb(4,0,250)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(4,0,250)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.12593361481232, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_f3a60517d1f2559116f757bf4dce4f8f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_54282c69b07ab13f94af176b4d8194e5 = $(`<div id="html_54282c69b07ab13f94af176b4d8194e5" style="width: 100.0%; height: 100.0%;">ID: 4736<br>Mineral: ['_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Chrysocolla_HS297_4B_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.008215796553369912, 0.008716094841332525, 0.012220403556659367, 0.012294988302326884, 0.01574170185154004]<br>H2 ppm: 11</div>`)[0];
+                popup_f3a60517d1f2559116f757bf4dce4f8f.setContent(html_54282c69b07ab13f94af176b4d8194e5);
+            
+        
+
+        circle_marker_6d6f347b2b222bec69c8d4069998ad81.bindPopup(popup_f3a60517d1f2559116f757bf4dce4f8f)
+        ;
+
+        
+    
+    
+            var circle_marker_190a5a9572fdaadad96312d21408a1f0 = L.circleMarker(
+                [55.5179, 86.0805],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.123368380778329, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_894ba9506d6b1bb83444cfeab43d45b3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e98520cef63ed11a340b93c6f2fd825e = $(`<div id="html_e98520cef63ed11a340b93c6f2fd825e" style="width: 100.0%; height: 100.0%;">ID: 4737<br>Mineral: ['_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Chrysocolla_HS297_4B_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.00813545486737111, 0.008798622547619763, 0.009782627607298706, 0.011676075435955027, 0.015421047597291149]<br>H2 ppm: 87.2</div>`)[0];
+                popup_894ba9506d6b1bb83444cfeab43d45b3.setContent(html_e98520cef63ed11a340b93c6f2fd825e);
+            
+        
+
+        circle_marker_190a5a9572fdaadad96312d21408a1f0.bindPopup(popup_894ba9506d6b1bb83444cfeab43d45b3)
+        ;
+
+        
+    
+    
+            var circle_marker_beded7b842b1a821105d7a1d34914c94 = L.circleMarker(
+                [55.3555, 86.0867],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.100987853711608, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_b8446de791b4c21f9537a8f10e975f5d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dc49601126588ee684eedad4c9f56b14 = $(`<div id="html_dc49601126588ee684eedad4c9f56b14" style="width: 100.0%; height: 100.0%;">ID: 4738<br>Mineral: ['_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Ulexite_HS441_4B_ASDFRa_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.007005593311443202, 0.007018535850768361, 0.007959607154053097, 0.00867152277499156, 0.012623481713951048]<br>H2 ppm: 18.4</div>`)[0];
+                popup_b8446de791b4c21f9537a8f10e975f5d.setContent(html_dc49601126588ee684eedad4c9f56b14);
+            
+        
+
+        circle_marker_beded7b842b1a821105d7a1d34914c94.bindPopup(popup_b8446de791b4c21f9537a8f10e975f5d)
+        ;
+
+        
+    
+    
+            var circle_marker_429d9e16a3b16a31ed15bb74d078492f = L.circleMarker(
+                [54.6503, 86.1517],
+                {"bubblingMouseEvents": true, "color": "rgb(2,0,252)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(2,0,252)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.083069117952057, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_8d86b5527de953905dd5163998e40de8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_97aacafab844d2272bda20ea8c3dfce4 = $(`<div id="html_97aacafab844d2272bda20ea8c3dfce4" style="width: 100.0%; height: 100.0%;">ID: 4739<br>Mineral: ['_S07SNTL2_Olivine_HS420_4B_ASDFRc_AREF', '_S07SNTL2_Ulexite_HS441_4B_ASDFRa_AREF', '_S07SNTL2_Bronzite_HS9_3B_ASDFRc_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.006562585999684119, 0.006876951366467275, 0.006994223699094155, 0.00799182120748534, 0.010383639744007182]<br>H2 ppm: 20</div>`)[0];
+                popup_8d86b5527de953905dd5163998e40de8.setContent(html_97aacafab844d2272bda20ea8c3dfce4);
+            
+        
+
+        circle_marker_429d9e16a3b16a31ed15bb74d078492f.bindPopup(popup_8d86b5527de953905dd5163998e40de8)
+        ;
+
+        
+    
+    
+            var circle_marker_65db29d04a134e15400cc39b3f6d18e1 = L.circleMarker(
+                [54.994, 86.1919],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.121287834482103, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_488eb3471f54446be74496ed8101e6e4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8cc2fd2c7573e3f237715120f7c6b607 = $(`<div id="html_8cc2fd2c7573e3f237715120f7c6b607" style="width: 100.0%; height: 100.0%;">ID: 4740<br>Mineral: ['_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Chrysocolla_HS297_4B_ASDFRb_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.008066403619459157, 0.00830620152484507, 0.008861408981574104, 0.011198683329056923, 0.015160979310262883]<br>H2 ppm: 35</div>`)[0];
+                popup_488eb3471f54446be74496ed8101e6e4.setContent(html_8cc2fd2c7573e3f237715120f7c6b607);
+            
+        
+
+        circle_marker_65db29d04a134e15400cc39b3f6d18e1.bindPopup(popup_488eb3471f54446be74496ed8101e6e4)
+        ;
+
+        
+    
+    
+            var circle_marker_14ddfed27921a6743f00286a49d670b6 = L.circleMarker(
+                [67.4687, 86.5729],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.121838492554265, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_b93c2d71614bcd2121b9a89857bc5eb9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1c847f33251d858f30bbdf75193da1c7 = $(`<div id="html_1c847f33251d858f30bbdf75193da1c7" style="width: 100.0%; height: 100.0%;">ID: 4741<br>Mineral: ['_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Chrysocolla_HS297_4B_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.008025619155298338, 0.008617512556227497, 0.010696466113071342, 0.011714842731877279, 0.01522981156928319]<br>H2 ppm: 89.5</div>`)[0];
+                popup_b93c2d71614bcd2121b9a89857bc5eb9.setContent(html_1c847f33251d858f30bbdf75193da1c7);
+            
+        
+
+        circle_marker_14ddfed27921a6743f00286a49d670b6.bindPopup(popup_b93c2d71614bcd2121b9a89857bc5eb9)
+        ;
+
+        
+    
+    
+            var circle_marker_7047f191c8fc1a6492282459844c8a66 = L.circleMarker(
+                [53.7939, 87.3193],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.10154213417497, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_6ce915e41ae4a736186991b11d6bf26a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f1176148ff908fa600fa44c644f84918 = $(`<div id="html_f1176148ff908fa600fa44c644f84918" style="width: 100.0%; height: 100.0%;">ID: 4742<br>Mineral: ['_S07SNTL2_Ulexite_HS441_4B_ASDFRa_AREF', '_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.006962366753995921, 0.00706575469924917, 0.00812100314702202, 0.008647367068402875, 0.012692766771871259]<br>H2 ppm: 11.4</div>`)[0];
+                popup_6ce915e41ae4a736186991b11d6bf26a.setContent(html_f1176148ff908fa600fa44c644f84918);
+            
+        
+
+        circle_marker_7047f191c8fc1a6492282459844c8a66.bindPopup(popup_6ce915e41ae4a736186991b11d6bf26a)
+        ;
+
+        
+    
+    
+            var circle_marker_b915ca3a5dcd2b6b004800cced016960 = L.circleMarker(
+                [53.852, 87.3655],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.123557069683769, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_daeefd4e256aab160bc078cd9aa8e70b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c21485055ea651994bffec771944cd5c = $(`<div id="html_c21485055ea651994bffec771944cd5c" style="width: 100.0%; height: 100.0%;">ID: 4743<br>Mineral: ['_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Chrysocolla_HS297_4B_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.008097930776352976, 0.008751874683619954, 0.010303904793974469, 0.011729175327917335, 0.015444633710471122]<br>H2 ppm: 18.4</div>`)[0];
+                popup_daeefd4e256aab160bc078cd9aa8e70b.setContent(html_c21485055ea651994bffec771944cd5c);
+            
+        
+
+        circle_marker_b915ca3a5dcd2b6b004800cced016960.bindPopup(popup_daeefd4e256aab160bc078cd9aa8e70b)
+        ;
+
+        
+    
+    
+            var circle_marker_25ea9e70e5738b22e09660fd6fe46550 = L.circleMarker(
+                [69.3656, 87.7334],
+                {"bubblingMouseEvents": true, "color": "rgb(4,0,250)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(4,0,250)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.1313321033613715, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_1f9216e10ba64a37b879328b458cabeb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1f8b223330c6ec4526256d6b947e3767 = $(`<div id="html_1f8b223330c6ec4526256d6b947e3767" style="width: 100.0%; height: 100.0%;">ID: 4744<br>Mineral: ['_S07SNTL2_Chrysocolla_HS297_3B_ASDFRb_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Chrysocolla_HS297_4B_ASDFRb_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.008820238103674287, 0.008891393468313653, 0.01286151019633466, 0.013489602474540254, 0.016416512920171475]<br>H2 ppm: 95.4</div>`)[0];
+                popup_1f9216e10ba64a37b879328b458cabeb.setContent(html_1f8b223330c6ec4526256d6b947e3767);
+            
+        
+
+        circle_marker_25ea9e70e5738b22e09660fd6fe46550.bindPopup(popup_1f9216e10ba64a37b879328b458cabeb)
+        ;
+
+        
+    
+    
+            var circle_marker_497f12e295b54a117cb4d4ae81c26b29 = L.circleMarker(
+                [52.8376, 87.9366],
+                {"bubblingMouseEvents": true, "color": "rgb(5,0,249)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(5,0,249)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.1798369814935254, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_425318673cf9e9d70494312787d591f3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_96bdc180a3785ca662f87e7b1a181202 = $(`<div id="html_96bdc180a3785ca662f87e7b1a181202" style="width: 100.0%; height: 100.0%;">ID: 4745<br>Mineral: ['_S07SNTL2_Chrysocolla_HS297_2B_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Chrysocolla_HS297_3B_ASDFRb_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF', '_S07SNTL2_Chrysocolla_HS297_4B_ASDFRb_AREF']<br>Probability: [0.010295096572854488, 0.013888410488833196, 0.014187405833852676, 0.016313186474776035, 0.02247962268669065]<br>H2 ppm: 61</div>`)[0];
+                popup_425318673cf9e9d70494312787d591f3.setContent(html_96bdc180a3785ca662f87e7b1a181202);
+            
+        
+
+        circle_marker_497f12e295b54a117cb4d4ae81c26b29.bindPopup(popup_425318673cf9e9d70494312787d591f3)
+        ;
+
+        
+    
+    
+            var circle_marker_add51b8cdfa5890e6b046c4b1f05ba1a = L.circleMarker(
+                [52.9131, 88.0114],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.113548345864144, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_095c9f8248840d248eebb72e0bda0a43 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6764b933fef665e4915358d93835f902 = $(`<div id="html_6764b933fef665e4915358d93835f902" style="width: 100.0%; height: 100.0%;">ID: 4746<br>Mineral: ['_S07SNTL2_Jadeite_HS343_6_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.00719168233622442, 0.007541923578921521, 0.009054770240909917, 0.009250015455491803, 0.014193543233017995]<br>H2 ppm: 89.8</div>`)[0];
+                popup_095c9f8248840d248eebb72e0bda0a43.setContent(html_6764b933fef665e4915358d93835f902);
+            
+        
+
+        circle_marker_add51b8cdfa5890e6b046c4b1f05ba1a.bindPopup(popup_095c9f8248840d248eebb72e0bda0a43)
+        ;
+
+        
+    
+    
+            var circle_marker_7cc6a7b2bebfb1be7ed65384fa365f12 = L.circleMarker(
+                [65.1627, 88.1085],
+                {"bubblingMouseEvents": true, "color": "rgb(4,0,250)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(4,0,250)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.126717343784268, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_fb0275343a4e04702b8b507c204e269f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4d6c36abea0e9a9b44e4e86091f79a61 = $(`<div id="html_4d6c36abea0e9a9b44e4e86091f79a61" style="width: 100.0%; height: 100.0%;">ID: 4747<br>Mineral: ['_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Chrysocolla_HS297_3B_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Chrysocolla_HS297_4B_ASDFRb_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.008668021470357874, 0.008924996829433192, 0.012584157976121625, 0.013414981459754416, 0.015839667973033447]<br>H2 ppm: 69.5</div>`)[0];
+                popup_fb0275343a4e04702b8b507c204e269f.setContent(html_4d6c36abea0e9a9b44e4e86091f79a61);
+            
+        
+
+        circle_marker_7cc6a7b2bebfb1be7ed65384fa365f12.bindPopup(popup_fb0275343a4e04702b8b507c204e269f)
+        ;
+
+        
+    
+    
+            var circle_marker_609fb822a62e609faacd03c6fcf77cae = L.circleMarker(
+                [65.5947, 88.1445],
+                {"bubblingMouseEvents": true, "color": "rgb(4,0,250)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(4,0,250)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.126894501435813, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_1c64318b1fccc285aa6afcdd1b578cfc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0dde8867685e285a525afcb6d1abd761 = $(`<div id="html_0dde8867685e285a525afcb6d1abd761" style="width: 100.0%; height: 100.0%;">ID: 4748<br>Mineral: ['_S07SNTL2_Chrysocolla_HS297_3B_ASDFRb_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Chrysocolla_HS297_4B_ASDFRb_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.008274382314553595, 0.008751561780635252, 0.012422065881789303, 0.012452464444878058, 0.01586181267947664]<br>H2 ppm: 26.1</div>`)[0];
+                popup_1c64318b1fccc285aa6afcdd1b578cfc.setContent(html_0dde8867685e285a525afcb6d1abd761);
+            
+        
+
+        circle_marker_609fb822a62e609faacd03c6fcf77cae.bindPopup(popup_1c64318b1fccc285aa6afcdd1b578cfc)
+        ;
+
+        
+    
+    
+            var circle_marker_8b4289095ec1672feb1add45875a94db = L.circleMarker(
+                [69.3123, 88.1782],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.114902962794859, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_3924a585b7e56cba2a54eda74bc68045 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_310885dcde4af7707aa928900ed078e5 = $(`<div id="html_310885dcde4af7707aa928900ed078e5" style="width: 100.0%; height: 100.0%;">ID: 4749<br>Mineral: ['_S07SNTL2_Jadeite_HS343_6_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.007244596935805081, 0.007589475035148397, 0.00898997327627173, 0.009543665705442354, 0.01436287034935738]<br>H2 ppm: 21.5</div>`)[0];
+                popup_3924a585b7e56cba2a54eda74bc68045.setContent(html_310885dcde4af7707aa928900ed078e5);
+            
+        
+
+        circle_marker_8b4289095ec1672feb1add45875a94db.bindPopup(popup_3924a585b7e56cba2a54eda74bc68045)
+        ;
+
+        
+    
+    
+            var circle_marker_1e92370326d1c51cd3e1138eca65f967 = L.circleMarker(
+                [69.3499, 88.2006],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.104422286632008, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_c035191052970d12af249e21f4ed49fc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_262379d6cdb250270f85f39113c2a5cd = $(`<div id="html_262379d6cdb250270f85f39113c2a5cd" style="width: 100.0%; height: 100.0%;">ID: 4750<br>Mineral: ['_S07SNTL2_Ulexite_HS441_4B_ASDFRa_AREF', '_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.006984876649706309, 0.0072373230586985325, 0.008466566441615923, 0.008751144888249357, 0.013052785829001039]<br>H2 ppm: 33</div>`)[0];
+                popup_c035191052970d12af249e21f4ed49fc.setContent(html_262379d6cdb250270f85f39113c2a5cd);
+            
+        
+
+        circle_marker_1e92370326d1c51cd3e1138eca65f967.bindPopup(popup_c035191052970d12af249e21f4ed49fc)
+        ;
+
+        
+    
+    
+            var circle_marker_af93f5b1b7d0d26e63a64954ea94cfb8 = L.circleMarker(
+                [69.3487, 88.2016],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.109886889706588, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_156a491b7fa625cf6fcc628621eb045e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aab873fb17c05533c67d4e3b1e9afa5a = $(`<div id="html_aab873fb17c05533c67d4e3b1e9afa5a" style="width: 100.0%; height: 100.0%;">ID: 4751<br>Mineral: ['_S07SNTL2_Jadeite_HS343_6_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.0070575831461560734, 0.007507475525355091, 0.008814346151595282, 0.00925308936253789, 0.013735861213323533]<br>H2 ppm: 96.8</div>`)[0];
+                popup_156a491b7fa625cf6fcc628621eb045e.setContent(html_aab873fb17c05533c67d4e3b1e9afa5a);
+            
+        
+
+        circle_marker_af93f5b1b7d0d26e63a64954ea94cfb8.bindPopup(popup_156a491b7fa625cf6fcc628621eb045e)
+        ;
+
+        
+    
+    
+            var circle_marker_457eda8a1d2de38744e3ade46ee15b57 = L.circleMarker(
+                [69.5064, 88.3876],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.1166897658497765, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_7407062a943e37c288032f3c09f14e3c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_31a8337d170456194b6b7c80c3d692a2 = $(`<div id="html_31a8337d170456194b6b7c80c3d692a2" style="width: 100.0%; height: 100.0%;">ID: 4752<br>Mineral: ['_S07SNTL2_Jadeite_HS343_6_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.007418379010393143, 0.007818354802261696, 0.00874527540615741, 0.010533049042326013, 0.014586220731222113]<br>H2 ppm: 12.7</div>`)[0];
+                popup_7407062a943e37c288032f3c09f14e3c.setContent(html_31a8337d170456194b6b7c80c3d692a2);
+            
+        
+
+        circle_marker_457eda8a1d2de38744e3ade46ee15b57.bindPopup(popup_7407062a943e37c288032f3c09f14e3c)
+        ;
+
+        
+    
+    
+            var circle_marker_af3dc9352507622d5b037aeaeb342fcd = L.circleMarker(
+                [65.8218, 88.3972],
+                {"bubblingMouseEvents": true, "color": "rgb(5,0,249)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(5,0,249)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.1721803829122655, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_506c6b79fa6a72c64bb27d61434f0753 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_80429f66055a96386371c9e036094c1a = $(`<div id="html_80429f66055a96386371c9e036094c1a" style="width: 100.0%; height: 100.0%;">ID: 4753<br>Mineral: ['_S07SNTL2_Chrysocolla_HS297_2B_ASDFRb_AREF', '_S07SNTL2_Chrysocolla_HS297_3B_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF', '_S07SNTL2_Chrysocolla_HS297_4B_ASDFRb_AREF']<br>Probability: [0.010112221360682318, 0.01370850964424025, 0.013838278940140175, 0.01643562716996783, 0.021522547864033143]<br>H2 ppm: 87.7</div>`)[0];
+                popup_506c6b79fa6a72c64bb27d61434f0753.setContent(html_80429f66055a96386371c9e036094c1a);
+            
+        
+
+        circle_marker_af3dc9352507622d5b037aeaeb342fcd.bindPopup(popup_506c6b79fa6a72c64bb27d61434f0753)
+        ;
+
+        
+    
+    
+            var circle_marker_0f514a3077991543840f5aeb3a9f1908 = L.circleMarker(
+                [53.3947, 88.9121],
+                {"bubblingMouseEvents": true, "color": "rgb(5,0,249)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(5,0,249)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.178375624943903, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_85c1709c8585ce13d196c7452bf5cf19 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4b4463e8c081826c5bcafbecd1d8e108 = $(`<div id="html_4b4463e8c081826c5bcafbecd1d8e108" style="width: 100.0%; height: 100.0%;">ID: 4754<br>Mineral: ['_S07SNTL2_Chrysocolla_HS297_2B_ASDFRb_AREF', '_S07SNTL2_Chrysocolla_HS297_3B_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF', '_S07SNTL2_Chrysocolla_HS297_4B_ASDFRb_AREF']<br>Probability: [0.010031908703044351, 0.013805261700149478, 0.014258962427458562, 0.016808338666801963, 0.022296953117987878]<br>H2 ppm: 80.7</div>`)[0];
+                popup_85c1709c8585ce13d196c7452bf5cf19.setContent(html_4b4463e8c081826c5bcafbecd1d8e108);
+            
+        
+
+        circle_marker_0f514a3077991543840f5aeb3a9f1908.bindPopup(popup_85c1709c8585ce13d196c7452bf5cf19)
+        ;
+
+        
+    
+    
+            var circle_marker_b587b2ba73807ba180b1bfa830cb5075 = L.circleMarker(
+                [55.3997, 88.9159],
+                {"bubblingMouseEvents": true, "color": "rgb(4,0,250)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(4,0,250)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.127481435793227, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_92a6d747d10b00a4bae3716e5199d0a5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_39b47d33da74a28aadde7f291515b0af = $(`<div id="html_39b47d33da74a28aadde7f291515b0af" style="width: 100.0%; height: 100.0%;">ID: 4755<br>Mineral: ['_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Chrysocolla_HS297_4B_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.008469533543334143, 0.009028568953196573, 0.010076248592381178, 0.01223277441945582, 0.0159351794741534]<br>H2 ppm: 86.3</div>`)[0];
+                popup_92a6d747d10b00a4bae3716e5199d0a5.setContent(html_39b47d33da74a28aadde7f291515b0af);
+            
+        
+
+        circle_marker_b587b2ba73807ba180b1bfa830cb5075.bindPopup(popup_92a6d747d10b00a4bae3716e5199d0a5)
+        ;
+
+        
+    
+    
+            var circle_marker_ab768f676a47776b820fe215d9bb171d = L.circleMarker(
+                [53.6266, 89.2471],
+                {"bubblingMouseEvents": true, "color": "rgb(7,0,247)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(7,0,247)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.247322482997267, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_c128087a5cee536db078799f1f25ccfd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e8a14a774ab631cd0ea5d250a32862a1 = $(`<div id="html_e8a14a774ab631cd0ea5d250a32862a1" style="width: 100.0%; height: 100.0%;">ID: 4756<br>Mineral: ['_S07SNTL2_Chrysocolla_HS297_2B_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF', '_S07SNTL2_Chrysocolla_HS297_3B_ASDFRb_AREF', '_S07SNTL2_Chrysocolla_HS297_4B_ASDFRb_AREF']<br>Probability: [0.01219863370734908, 0.014657485882236731, 0.016607953788564694, 0.018465493250937465, 0.030915310374658302]<br>H2 ppm: 83.7</div>`)[0];
+                popup_c128087a5cee536db078799f1f25ccfd.setContent(html_e8a14a774ab631cd0ea5d250a32862a1);
+            
+        
+
+        circle_marker_ab768f676a47776b820fe215d9bb171d.bindPopup(popup_c128087a5cee536db078799f1f25ccfd)
+        ;
+
+        
+    
+    
+            var circle_marker_5398d19745b5a00806cc61b9353ffd7d = L.circleMarker(
+                [53.2754, 89.5773],
+                {"bubblingMouseEvents": true, "color": "rgb(7,0,247)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(7,0,247)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.245296100361891, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_6d44b75d4c15a8e34cda77b7c6bfb3fb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a64eaeb0cff359b183d6581cf046996f = $(`<div id="html_a64eaeb0cff359b183d6581cf046996f" style="width: 100.0%; height: 100.0%;">ID: 4757<br>Mineral: ['_S07SNTL2_Chrysocolla_HS297_2B_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF', '_S07SNTL2_Chrysocolla_HS297_3B_ASDFRb_AREF', '_S07SNTL2_Chrysocolla_HS297_4B_ASDFRb_AREF']<br>Probability: [0.012554862152252962, 0.01448231971867557, 0.016106198220136494, 0.018857381858406266, 0.030662012545236383]<br>H2 ppm: 99.6</div>`)[0];
+                popup_6d44b75d4c15a8e34cda77b7c6bfb3fb.setContent(html_a64eaeb0cff359b183d6581cf046996f);
+            
+        
+
+        circle_marker_5398d19745b5a00806cc61b9353ffd7d.bindPopup(popup_6d44b75d4c15a8e34cda77b7c6bfb3fb)
+        ;
+
+        
+    
+    
+            var circle_marker_fd24c923de266e269f680a2387f660fa = L.circleMarker(
+                [53.2789, 89.6086],
+                {"bubblingMouseEvents": true, "color": "rgb(5,0,249)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(5,0,249)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.174804325779178, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_a8969d2cdcaa7d3d21cdc077ef382200 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_56ddf20fac5d7456903127af58d3fc48 = $(`<div id="html_56ddf20fac5d7456903127af58d3fc48" style="width: 100.0%; height: 100.0%;">ID: 4758<br>Mineral: ['_S07SNTL2_Chrysocolla_HS297_2B_ASDFRb_AREF', '_S07SNTL2_Chrysocolla_HS297_3B_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF', '_S07SNTL2_Chrysocolla_HS297_4B_ASDFRb_AREF']<br>Probability: [0.00961677194641504, 0.013249961626809416, 0.014163654840313953, 0.017178499149123106, 0.021850540722397276]<br>H2 ppm: 91.1</div>`)[0];
+                popup_a8969d2cdcaa7d3d21cdc077ef382200.setContent(html_56ddf20fac5d7456903127af58d3fc48);
+            
+        
+
+        circle_marker_fd24c923de266e269f680a2387f660fa.bindPopup(popup_a8969d2cdcaa7d3d21cdc077ef382200)
+        ;
+
+        
+    
+    
+            var circle_marker_1f2563ff9724907e3b1ecbea96324a91 = L.circleMarker(
+                [69.1085, 89.6104],
+                {"bubblingMouseEvents": true, "color": "rgb(4,0,250)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(4,0,250)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.126974109407086, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_54b7fed7463f97b131a23cdffc81438d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b361b49df0793e1fe1409abc2ddac7cb = $(`<div id="html_b361b49df0793e1fe1409abc2ddac7cb" style="width: 100.0%; height: 100.0%;">ID: 4759<br>Mineral: ['_S07SNTL2_Chrysocolla_HS297_3B_ASDFRb_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Chrysocolla_HS297_4B_ASDFRb_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.008472898584514043, 0.008735219558308043, 0.012620128535851366, 0.012775062816540336, 0.01587176367588576]<br>H2 ppm: 25.1</div>`)[0];
+                popup_54b7fed7463f97b131a23cdffc81438d.setContent(html_b361b49df0793e1fe1409abc2ddac7cb);
+            
+        
+
+        circle_marker_1f2563ff9724907e3b1ecbea96324a91.bindPopup(popup_54b7fed7463f97b131a23cdffc81438d)
+        ;
+
+        
+    
+    
+            var circle_marker_0029872e588395dd7f3a3331e9f79958 = L.circleMarker(
+                [54.2857, 89.9525],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.122088031662032, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_9609e056a1001c60e94e2cbecc59c29a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8b53e0600bb2fa286449b103eaca7536 = $(`<div id="html_8b53e0600bb2fa286449b103eaca7536" style="width: 100.0%; height: 100.0%;">ID: 4760<br>Mineral: ['_S07SNTL2_Jadeite_HS343_6_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.00760538762735967, 0.008058322997609321, 0.009120455325748813, 0.010749488379150764, 0.015261003957753934]<br>H2 ppm: 71</div>`)[0];
+                popup_9609e056a1001c60e94e2cbecc59c29a.setContent(html_8b53e0600bb2fa286449b103eaca7536);
+            
+        
+
+        circle_marker_0029872e588395dd7f3a3331e9f79958.bindPopup(popup_9609e056a1001c60e94e2cbecc59c29a)
+        ;
+
+        
+    
+    
+            var circle_marker_399f87055ece2a95364ff69802d1567f = L.circleMarker(
+                [53.7371, 91.0819],
+                {"bubblingMouseEvents": true, "color": "rgb(2,0,252)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(2,0,252)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.082202759444779, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_1c65fef6f0416d24e0496c59c7c60d08 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3fd11f62faa143b1ca66b57ccad091c8 = $(`<div id="html_3fd11f62faa143b1ca66b57ccad091c8" style="width: 100.0%; height: 100.0%;">ID: 4761<br>Mineral: ['_S07SNTL2_Olivine_HS420_4B_ASDFRc_AREF', '_S07SNTL2_Ulexite_HS441_4B_ASDFRa_AREF', '_S07SNTL2_Bronzite_HS9_3B_ASDFRc_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.006616868701224381, 0.006920542066102403, 0.007180396269759746, 0.007996142402628659, 0.010275344930597384]<br>H2 ppm: 93.3</div>`)[0];
+                popup_1c65fef6f0416d24e0496c59c7c60d08.setContent(html_3fd11f62faa143b1ca66b57ccad091c8);
+            
+        
+
+        circle_marker_399f87055ece2a95364ff69802d1567f.bindPopup(popup_1c65fef6f0416d24e0496c59c7c60d08)
+        ;
+
+        
+    
+    
+            var circle_marker_2cbc51e53fdb6774d2fe806e2ff6d52f = L.circleMarker(
+                [54.0856, 92.04],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.112747008863422, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_3cdad3d13ca70403318c0584ab9a2b62 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_edafce47fa040290bdacaed541fc0a9a = $(`<div id="html_edafce47fa040290bdacaed541fc0a9a" style="width: 100.0%; height: 100.0%;">ID: 4762<br>Mineral: ['_S07SNTL2_Jadeite_HS343_6_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.007228101058577003, 0.007796292069809816, 0.008879161184399636, 0.00987309821540988, 0.014093376107927755]<br>H2 ppm: 38</div>`)[0];
+                popup_3cdad3d13ca70403318c0584ab9a2b62.setContent(html_edafce47fa040290bdacaed541fc0a9a);
+            
+        
+
+        circle_marker_2cbc51e53fdb6774d2fe806e2ff6d52f.bindPopup(popup_3cdad3d13ca70403318c0584ab9a2b62)
+        ;
+
+        
+    
+    
+            var circle_marker_c0966c2bd7f52e0ce1cdf199abba33fd = L.circleMarker(
+                [56.0517, 95.0465],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.122631566283512, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_eaf1bf73004f5190f7e46aa253aad890 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c49c2589ed35d78391aefd7290a38ed6 = $(`<div id="html_c49c2589ed35d78391aefd7290a38ed6" style="width: 100.0%; height: 100.0%;">ID: 4763<br>Mineral: ['_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Chrysocolla_HS297_4B_ASDFRb_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.008137760834877288, 0.008807065368776786, 0.008875029515578699, 0.011438234837941793, 0.015328945785438936]<br>H2 ppm: 42.3</div>`)[0];
+                popup_eaf1bf73004f5190f7e46aa253aad890.setContent(html_c49c2589ed35d78391aefd7290a38ed6);
+            
+        
+
+        circle_marker_c0966c2bd7f52e0ce1cdf199abba33fd.bindPopup(popup_eaf1bf73004f5190f7e46aa253aad890)
+        ;
+
+        
+    
+    
+            var circle_marker_46573e3c04a091d65bcc7c983f670fbf = L.circleMarker(
+                [61.597, 96.2989],
+                {"bubblingMouseEvents": true, "color": "rgb(4,0,250)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(4,0,250)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.1295237038899195, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_834b5ec14c6cecf86355948684a3befc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2e3723664db8d70a442f98b82001d06c = $(`<div id="html_2e3723664db8d70a442f98b82001d06c" style="width: 100.0%; height: 100.0%;">ID: 4764<br>Mineral: ['_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Chrysocolla_HS297_4B_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.008384654324874116, 0.008942543491066022, 0.011893106475292896, 0.012478605655778307, 0.016190462986239915]<br>H2 ppm: 34.6</div>`)[0];
+                popup_834b5ec14c6cecf86355948684a3befc.setContent(html_2e3723664db8d70a442f98b82001d06c);
+            
+        
+
+        circle_marker_46573e3c04a091d65bcc7c983f670fbf.bindPopup(popup_834b5ec14c6cecf86355948684a3befc)
+        ;
+
+        
+    
+    
+            var circle_marker_d2f3374434c2074b02ff3f6a0a21843e = L.circleMarker(
+                [56.3, 101.9229],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.115748427523262, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_b62d13d48037b17623385612e181ad52 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8204b7f69501199c85af6019dba0f1b5 = $(`<div id="html_8204b7f69501199c85af6019dba0f1b5" style="width: 100.0%; height: 100.0%;">ID: 4765<br>Mineral: ['_S07SNTL2_Jadeite_HS343_6_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.007302869891570526, 0.0077411201038252025, 0.009143214104396885, 0.009618621028449677, 0.01446855344040771]<br>H2 ppm: 98.7</div>`)[0];
+                popup_b62d13d48037b17623385612e181ad52.setContent(html_8204b7f69501199c85af6019dba0f1b5);
+            
+        
+
+        circle_marker_d2f3374434c2074b02ff3f6a0a21843e.bindPopup(popup_b62d13d48037b17623385612e181ad52)
+        ;
+
+        
+    
+    
+            var circle_marker_8d751a21635fead62e9be30021977eea = L.circleMarker(
+                [70.7426, 102.0492],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.116522500330618, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_c9392540c3a38981c744223cce7096ac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_859317d563cc1da8df48b38462f7b1d4 = $(`<div id="html_859317d563cc1da8df48b38462f7b1d4" style="width: 100.0%; height: 100.0%;">ID: 4766<br>Mineral: ['_S07SNTL2_Jadeite_HS343_6_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.007428420993598252, 0.008051674492469681, 0.008941464574871525, 0.010550096127765326, 0.014565312541327157]<br>H2 ppm: 100</div>`)[0];
+                popup_c9392540c3a38981c744223cce7096ac.setContent(html_859317d563cc1da8df48b38462f7b1d4);
+            
+        
+
+        circle_marker_8d751a21635fead62e9be30021977eea.bindPopup(popup_c9392540c3a38981c744223cce7096ac)
+        ;
+
+        
+    
+    
+            var circle_marker_14917b00ae9338450edff981116c1c02 = L.circleMarker(
+                [71.9893, 102.5019],
+                {"bubblingMouseEvents": true, "color": "rgb(4,0,250)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(4,0,250)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.147930970673894, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_61b0bf2a520ecb199b281637edc423d2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f6bb10d4a67f75832fbfbaa3ce5c560d = $(`<div id="html_f6bb10d4a67f75832fbfbaa3ce5c560d" style="width: 100.0%; height: 100.0%;">ID: 4767<br>Mineral: ['_S07SNTL2_Chrysocolla_HS297_2B_ASDFRb_AREF', '_S07SNTL2_Chrysocolla_HS297_3B_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF', '_S07SNTL2_Chrysocolla_HS297_4B_ASDFRb_AREF']<br>Probability: [0.009367506703556423, 0.01214584154047476, 0.013327598213332325, 0.01611452079990062, 0.01849137133423672]<br>H2 ppm: 95.5</div>`)[0];
+                popup_61b0bf2a520ecb199b281637edc423d2.setContent(html_f6bb10d4a67f75832fbfbaa3ce5c560d);
+            
+        
+
+        circle_marker_14917b00ae9338450edff981116c1c02.bindPopup(popup_61b0bf2a520ecb199b281637edc423d2)
+        ;
+
+        
+    
+    
+            var circle_marker_3d9c1e2a7cfc9c1288b654ac2efaee69 = L.circleMarker(
+                [51.7369, 102.5499],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.118576847449188, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_116dbe85efc40ce601c0745788f3e0d2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8b2a6ed9d91b9f75a889451406e4c2e0 = $(`<div id="html_8b2a6ed9d91b9f75a889451406e4c2e0" style="width: 100.0%; height: 100.0%;">ID: 4768<br>Mineral: ['_S07SNTL2_Jadeite_HS343_6_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.007474960624833465, 0.00794138065678358, 0.008940905115411013, 0.010551348553966744, 0.014822105931148495]<br>H2 ppm: 80</div>`)[0];
+                popup_116dbe85efc40ce601c0745788f3e0d2.setContent(html_8b2a6ed9d91b9f75a889451406e4c2e0);
+            
+        
+
+        circle_marker_3d9c1e2a7cfc9c1288b654ac2efaee69.bindPopup(popup_116dbe85efc40ce601c0745788f3e0d2)
+        ;
+
+        
+    
+    
+            var circle_marker_22c25fd397e90530f6e81bcac5b3b828 = L.circleMarker(
+                [53.7188, 102.8016],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.111993891410231, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_9d07686b0a118a8a72d780c85ca833b5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_752a5d628faae0020d2ea689b26c3525 = $(`<div id="html_752a5d628faae0020d2ea689b26c3525" style="width: 100.0%; height: 100.0%;">ID: 4769<br>Mineral: ['_S07SNTL2_Jadeite_HS343_6_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.007184140895552567, 0.007704703537946467, 0.008824838289073397, 0.009744416793970865, 0.01399923642627892]<br>H2 ppm: 43.5</div>`)[0];
+                popup_9d07686b0a118a8a72d780c85ca833b5.setContent(html_752a5d628faae0020d2ea689b26c3525);
+            
+        
+
+        circle_marker_22c25fd397e90530f6e81bcac5b3b828.bindPopup(popup_9d07686b0a118a8a72d780c85ca833b5)
+        ;
+
+        
+    
+    
+            var circle_marker_fbcf700779fdceab1071de5843180fc8 = L.circleMarker(
+                [56.2009, 102.8403],
+                {"bubblingMouseEvents": true, "color": "rgb(4,0,250)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(4,0,250)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.127782770308122, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_1b45a38e698ebd0ee784d423da711968 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b3fa8375a494a6e0ad256d62eb87ff1f = $(`<div id="html_b3fa8375a494a6e0ad256d62eb87ff1f" style="width: 100.0%; height: 100.0%;">ID: 4770<br>Mineral: ['_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Chrysocolla_HS297_3B_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Chrysocolla_HS297_4B_ASDFRb_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.008614972973711766, 0.00999803394799135, 0.01303700942917412, 0.015205055944633823, 0.015972846288515218]<br>H2 ppm: 13.2</div>`)[0];
+                popup_1b45a38e698ebd0ee784d423da711968.setContent(html_b3fa8375a494a6e0ad256d62eb87ff1f);
+            
+        
+
+        circle_marker_fbcf700779fdceab1071de5843180fc8.bindPopup(popup_1b45a38e698ebd0ee784d423da711968)
+        ;
+
+        
+    
+    
+            var circle_marker_304e2a5b80078328ae774b0dbf759519 = L.circleMarker(
+                [70.7019, 103.4423],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.122184396997289, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_ba918f69229ef6589579f6e215c18b8f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_87051024b0b8414fb8b77a8675b8a8e2 = $(`<div id="html_87051024b0b8414fb8b77a8675b8a8e2" style="width: 100.0%; height: 100.0%;">ID: 4771<br>Mineral: ['_S07SNTL2_Jadeite_HS343_6_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.007621277250599511, 0.008092898772686466, 0.009101208400868371, 0.010855244285682774, 0.01527304962466118]<br>H2 ppm: 76.4</div>`)[0];
+                popup_ba918f69229ef6589579f6e215c18b8f.setContent(html_87051024b0b8414fb8b77a8675b8a8e2);
+            
+        
+
+        circle_marker_304e2a5b80078328ae774b0dbf759519.bindPopup(popup_ba918f69229ef6589579f6e215c18b8f)
+        ;
+
+        
+    
+    
+            var circle_marker_6782192ed29e4f5a5b07dbcaf7df504a = L.circleMarker(
+                [57.2445, 103.6277],
+                {"bubblingMouseEvents": true, "color": "rgb(4,0,250)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(4,0,250)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.13175632652819, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_d06f69e46b256d1f80b1eb19ad1b4b06 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d7e7935da2797c4e902ccf67a10fd14c = $(`<div id="html_d7e7935da2797c4e902ccf67a10fd14c" style="width: 100.0%; height: 100.0%;">ID: 4772<br>Mineral: ['_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Chrysocolla_HS297_3B_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Chrysocolla_HS297_4B_ASDFRb_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.00882560505383682, 0.009767138698128225, 0.013284134306443724, 0.015198606019158562, 0.016469540816023677]<br>H2 ppm: 48.8</div>`)[0];
+                popup_d06f69e46b256d1f80b1eb19ad1b4b06.setContent(html_d7e7935da2797c4e902ccf67a10fd14c);
+            
+        
+
+        circle_marker_6782192ed29e4f5a5b07dbcaf7df504a.bindPopup(popup_d06f69e46b256d1f80b1eb19ad1b4b06)
+        ;
+
+        
+    
+    
+            var circle_marker_ae06be9ac1ed647a909330ecccf9bd57 = L.circleMarker(
+                [52.1693, 104.468],
+                {"bubblingMouseEvents": true, "color": "rgb(4,0,250)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(4,0,250)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.132465716955187, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_8d74c35158429dce0db397951465f7e4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bbdf1ab415b6843706aa8aebb264fdbe = $(`<div id="html_bbdf1ab415b6843706aa8aebb264fdbe" style="width: 100.0%; height: 100.0%;">ID: 4773<br>Mineral: ['_S07SNTL2_Chrysocolla_HS297_3B_ASDFRb_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Chrysocolla_HS297_4B_ASDFRb_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.008616103760178335, 0.008986718237043207, 0.013082351106446524, 0.013433556546902075, 0.01655821461939833]<br>H2 ppm: 20.5</div>`)[0];
+                popup_8d74c35158429dce0db397951465f7e4.setContent(html_bbdf1ab415b6843706aa8aebb264fdbe);
+            
+        
+
+        circle_marker_ae06be9ac1ed647a909330ecccf9bd57.bindPopup(popup_8d74c35158429dce0db397951465f7e4)
+        ;
+
+        
+    
+    
+            var circle_marker_c39c62ba805be5e446e32075f5fc4710 = L.circleMarker(
+                [52.6152, 104.7868],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.116135145514836, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_045c9215c0594ae57b54aca21e3e565a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_432194b754c495b2b8459a3c2c90b64f = $(`<div id="html_432194b754c495b2b8459a3c2c90b64f" style="width: 100.0%; height: 100.0%;">ID: 4774<br>Mineral: ['_S07SNTL2_Jadeite_HS343_6_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.007397815010154217, 0.007921618989092402, 0.00883501479759959, 0.010485099111329433, 0.014516893189354422]<br>H2 ppm: 11.1</div>`)[0];
+                popup_045c9215c0594ae57b54aca21e3e565a.setContent(html_432194b754c495b2b8459a3c2c90b64f);
+            
+        
+
+        circle_marker_c39c62ba805be5e446e32075f5fc4710.bindPopup(popup_045c9215c0594ae57b54aca21e3e565a)
+        ;
+
+        
+    
+    
+            var circle_marker_6fb5c471f6c1bdd7e50625434fe53f58 = L.circleMarker(
+                [56.7913, 105.8474],
+                {"bubblingMouseEvents": true, "color": "rgb(4,0,250)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(4,0,250)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.133435855126068, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_3d37c26a8f7ef96a64e07b64b6268704 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6d7de099911b36a5131aadbb6a32ed8f = $(`<div id="html_6d7de099911b36a5131aadbb6a32ed8f" style="width: 100.0%; height: 100.0%;">ID: 4775<br>Mineral: ['_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Chrysocolla_HS297_4B_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.00862697303508573, 0.009122688902363063, 0.012420859065488758, 0.01295558659191555, 0.01667948189075854]<br>H2 ppm: 18.7</div>`)[0];
+                popup_3d37c26a8f7ef96a64e07b64b6268704.setContent(html_6d7de099911b36a5131aadbb6a32ed8f);
+            
+        
+
+        circle_marker_6fb5c471f6c1bdd7e50625434fe53f58.bindPopup(popup_3d37c26a8f7ef96a64e07b64b6268704)
+        ;
+
+        
+    
+    
+            var circle_marker_81d83d0ab7065d7c37b616e6bc669d0f = L.circleMarker(
+                [51.4519, 106.9152],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.117526896722642, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_8baa9ffd213f489d0d55e4eede779d4a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_376ca23a8125468cb81b17c750391a76 = $(`<div id="html_376ca23a8125468cb81b17c750391a76" style="width: 100.0%; height: 100.0%;">ID: 4776<br>Mineral: ['_S07SNTL2_Jadeite_HS343_6_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.007409889927944533, 0.007932551435003697, 0.009091322021710695, 0.010169775046335209, 0.01469086209033019]<br>H2 ppm: 95</div>`)[0];
+                popup_8baa9ffd213f489d0d55e4eede779d4a.setContent(html_376ca23a8125468cb81b17c750391a76);
+            
+        
+
+        circle_marker_81d83d0ab7065d7c37b616e6bc669d0f.bindPopup(popup_8baa9ffd213f489d0d55e4eede779d4a)
+        ;
+
+        
+    
+    
+            var circle_marker_6b9bf99b39a8ffa4d5c464543736950c = L.circleMarker(
+                [57.3568, 107.0437],
+                {"bubblingMouseEvents": true, "color": "rgb(4,0,250)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(4,0,250)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.132009607145264, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_a08292342898bc2010f84e95f804a164 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d68e755ae9fedeabfe40863c2d159f9f = $(`<div id="html_d68e755ae9fedeabfe40863c2d159f9f" style="width: 100.0%; height: 100.0%;">ID: 4777<br>Mineral: ['_S07SNTL2_Chrysocolla_HS297_3B_ASDFRb_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Chrysocolla_HS297_4B_ASDFRb_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.00879440443663773, 0.0089413245001247, 0.012993017422972123, 0.013670172863850777, 0.01650120089315794]<br>H2 ppm: 40</div>`)[0];
+                popup_a08292342898bc2010f84e95f804a164.setContent(html_d68e755ae9fedeabfe40863c2d159f9f);
+            
+        
+
+        circle_marker_6b9bf99b39a8ffa4d5c464543736950c.bindPopup(popup_a08292342898bc2010f84e95f804a164)
+        ;
+
+        
+    
+    
+            var circle_marker_012ddc36bcad3e22edf65e25b830d4d5 = L.circleMarker(
+                [53.6154, 109.6349],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.106247494408159, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_b2a7c8399473d388c95d507ea3b6b75b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6346d48203e26b431a8968d64d687eb5 = $(`<div id="html_6346d48203e26b431a8968d64d687eb5" style="width: 100.0%; height: 100.0%;">ID: 4778<br>Mineral: ['_S07SNTL2_Jadeite_HS343_6_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.006893702452073032, 0.0073240192808618635, 0.008701852361481086, 0.008823339357203025, 0.01328093680101983]<br>H2 ppm: 80</div>`)[0];
+                popup_b2a7c8399473d388c95d507ea3b6b75b.setContent(html_6346d48203e26b431a8968d64d687eb5);
+            
+        
+
+        circle_marker_012ddc36bcad3e22edf65e25b830d4d5.bindPopup(popup_b2a7c8399473d388c95d507ea3b6b75b)
+        ;
+
+        
+    
+    
+            var circle_marker_96b5a7e52987d4564f02ed27be3f53c5 = L.circleMarker(
+                [66.4346, 112.3142],
+                {"bubblingMouseEvents": true, "color": "rgb(4,0,250)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(4,0,250)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.1370677298154925, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_e410b8c87fde631de353150a7d206183 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b8b20246f8b35cce54b86f89ba4602e3 = $(`<div id="html_b8b20246f8b35cce54b86f89ba4602e3" style="width: 100.0%; height: 100.0%;">ID: 4779<br>Mineral: ['_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Chrysocolla_HS297_4B_ASDFRb_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.008607009469293948, 0.009200968880840042, 0.01312843153810472, 0.013513467768246345, 0.017133466226936567]<br>H2 ppm: 40</div>`)[0];
+                popup_e410b8c87fde631de353150a7d206183.setContent(html_b8b20246f8b35cce54b86f89ba4602e3);
+            
+        
+
+        circle_marker_96b5a7e52987d4564f02ed27be3f53c5.bindPopup(popup_e410b8c87fde631de353150a7d206183)
+        ;
+
+        
+    
+    
+            var circle_marker_b8d7fc6e46407583cf8cc8210d33d7cd = L.circleMarker(
+                [66.435, 112.3148],
+                {"bubblingMouseEvents": true, "color": "rgb(4,0,250)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(4,0,250)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.130322421678401, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_6e41523ab66f8ef973aa4a1725bc703f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d05884375c446076bd6e54172251a0d4 = $(`<div id="html_d05884375c446076bd6e54172251a0d4" style="width: 100.0%; height: 100.0%;">ID: 4780<br>Mineral: ['_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Chrysocolla_HS297_4B_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.008281762108707545, 0.009035794226561637, 0.01108604032606112, 0.0121606665389773, 0.01629030270980011]<br>H2 ppm: 56</div>`)[0];
+                popup_6e41523ab66f8ef973aa4a1725bc703f.setContent(html_d05884375c446076bd6e54172251a0d4);
+            
+        
+
+        circle_marker_b8d7fc6e46407583cf8cc8210d33d7cd.bindPopup(popup_6e41523ab66f8ef973aa4a1725bc703f)
+        ;
+
+        
+    
+    
+            var circle_marker_f99298dee29e9e9596552b7e7a138396 = L.circleMarker(
+                [66.4352, 112.3159],
+                {"bubblingMouseEvents": true, "color": "rgb(4,0,250)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(4,0,250)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.133147829779711, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_ee96cb499896377adfc1eb820f199814 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a59c7039444e861f6df97a839a74f5e0 = $(`<div id="html_a59c7039444e861f6df97a839a74f5e0" style="width: 100.0%; height: 100.0%;">ID: 4781<br>Mineral: ['_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Chrysocolla_HS297_4B_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.00837540105622355, 0.009077312374498322, 0.012451546688630761, 0.012539979017475097, 0.01664347872246384]<br>H2 ppm: 58</div>`)[0];
+                popup_ee96cb499896377adfc1eb820f199814.setContent(html_a59c7039444e861f6df97a839a74f5e0);
+            
+        
+
+        circle_marker_f99298dee29e9e9596552b7e7a138396.bindPopup(popup_ee96cb499896377adfc1eb820f199814)
+        ;
+
+        
+    
+    
+            var circle_marker_cfe4e51bbd5854764fc6a8dd573bed37 = L.circleMarker(
+                [51.5643, 116.6269],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.111746124720163, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_a2de87902bce4506309157e8e8095a91 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea48d2dc8ff8838b4c0fbcd81163b409 = $(`<div id="html_ea48d2dc8ff8838b4c0fbcd81163b409" style="width: 100.0%; height: 100.0%;">ID: 4888<br>Mineral: ['_S07SNTL2_Jadeite_HS343_6_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.007149933257296936, 0.007644011785375891, 0.008911262485799204, 0.009478419657071108, 0.013968265590020346]<br>H2 ppm: 19</div>`)[0];
+                popup_a2de87902bce4506309157e8e8095a91.setContent(html_ea48d2dc8ff8838b4c0fbcd81163b409);
+            
+        
+
+        circle_marker_cfe4e51bbd5854764fc6a8dd573bed37.bindPopup(popup_a2de87902bce4506309157e8e8095a91)
+        ;
+
+        
+    
+    
+            var circle_marker_f3ca21a8fcc4e102d5261c39a1295505 = L.circleMarker(
+                [51.5816, 116.6644],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.114013239118585, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_432974f206da38677fcf9dc4b1bd0862 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1ca0016dfe24ee5cf190e2b3f1d16b97 = $(`<div id="html_1ca0016dfe24ee5cf190e2b3f1d16b97" style="width: 100.0%; height: 100.0%;">ID: 4889<br>Mineral: ['_S07SNTL2_Jadeite_HS343_6_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.007240067476654092, 0.007694158752696633, 0.008946220586286855, 0.009702707820772784, 0.014251654889823176]<br>H2 ppm: 20.3</div>`)[0];
+                popup_432974f206da38677fcf9dc4b1bd0862.setContent(html_1ca0016dfe24ee5cf190e2b3f1d16b97);
+            
+        
+
+        circle_marker_f3ca21a8fcc4e102d5261c39a1295505.bindPopup(popup_432974f206da38677fcf9dc4b1bd0862)
+        ;
+
+        
+    
+    
+            var circle_marker_28b677ad09ca22071fafd3f1f9b32a8c = L.circleMarker(
+                [51.5809, 116.6646],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.125414642809245, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_dc5cc5e51598b75c63ae11e3daccf1c9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_78de2e97c8913e07b6398da4ead9b593 = $(`<div id="html_78de2e97c8913e07b6398da4ead9b593" style="width: 100.0%; height: 100.0%;">ID: 4890<br>Mineral: ['_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Chrysocolla_HS297_4B_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.007982017332910103, 0.008967364436604683, 0.009308770770977016, 0.011237967029076883, 0.0156768303511556]<br>H2 ppm: 89.8</div>`)[0];
+                popup_dc5cc5e51598b75c63ae11e3daccf1c9.setContent(html_78de2e97c8913e07b6398da4ead9b593);
+            
+        
+
+        circle_marker_28b677ad09ca22071fafd3f1f9b32a8c.bindPopup(popup_dc5cc5e51598b75c63ae11e3daccf1c9)
+        ;
+
+        
+    
+    
+            var circle_marker_181865d1cf50c3dd52f87eae48946ceb = L.circleMarker(
+                [15.6322, 120.0293],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0991722720231785, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_ad724cb8bd6e571511bbf9c89538ca9d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e9e492bb8299910ca32b2d2796403013 = $(`<div id="html_e9e492bb8299910ca32b2d2796403013" style="width: 100.0%; height: 100.0%;">ID: 4892<br>Mineral: ['_S07SNTL2_Jadeite_HS343_6_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.006665601112087833, 0.007206493551408169, 0.008246234812583124, 0.00873882798730204, 0.012396534002897277]<br>H2 ppm: 45.6</div>`)[0];
+                popup_ad724cb8bd6e571511bbf9c89538ca9d.setContent(html_e9e492bb8299910ca32b2d2796403013);
+            
+        
+
+        circle_marker_181865d1cf50c3dd52f87eae48946ceb.bindPopup(popup_ad724cb8bd6e571511bbf9c89538ca9d)
+        ;
+
+        
+    
+    
+            var circle_marker_e08f1e49164ecf6b1225d606cdf1dd8c = L.circleMarker(
+                [14.837, 120.1282],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.095960688984835, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_cac7c73cedfff7ac00a3bb8ea6970b9e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_70e8887a9e4c9cfee636c903744d92ef = $(`<div id="html_70e8887a9e4c9cfee636c903744d92ef" style="width: 100.0%; height: 100.0%;">ID: 4893<br>Mineral: ['_S07SNTL2_Ulexite_HS441_4B_ASDFRa_AREF', '_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.006559056959836575, 0.006977631860143739, 0.008174132005729735, 0.008204333112886446, 0.011995086123104397]<br>H2 ppm: 58.5</div>`)[0];
+                popup_cac7c73cedfff7ac00a3bb8ea6970b9e.setContent(html_70e8887a9e4c9cfee636c903744d92ef);
+            
+        
+
+        circle_marker_e08f1e49164ecf6b1225d606cdf1dd8c.bindPopup(popup_cac7c73cedfff7ac00a3bb8ea6970b9e)
+        ;
+
+        
+    
+    
+            var circle_marker_edb8dcac2b79f340dc53e09e50be6822 = L.circleMarker(
+                [15.5718, 120.1513],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.109570137960374, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_9cca153250503a372b169b92e0d0b33d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d05dd95d3a7aa6f00b7ab8ab91cdad04 = $(`<div id="html_d05dd95d3a7aa6f00b7ab8ab91cdad04" style="width: 100.0%; height: 100.0%;">ID: 4894<br>Mineral: ['_S07SNTL2_Jadeite_HS343_6_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.007188207978732996, 0.007614746798580815, 0.008345495924436107, 0.010260852437148922, 0.013696267245046806]<br>H2 ppm: 44.5</div>`)[0];
+                popup_9cca153250503a372b169b92e0d0b33d.setContent(html_d05dd95d3a7aa6f00b7ab8ab91cdad04);
+            
+        
+
+        circle_marker_edb8dcac2b79f340dc53e09e50be6822.bindPopup(popup_9cca153250503a372b169b92e0d0b33d)
+        ;
+
+        
+    
+    
+            var circle_marker_4acf0a8a7622499d7fb47b2b2b80f908 = L.circleMarker(
+                [15.7033, 120.2825],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.11104648920377, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_28c2f84d8a4ae680e05a1fdcf322d283 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_96f4d67620e673fa9260dfd3a27ceca7 = $(`<div id="html_96f4d67620e673fa9260dfd3a27ceca7" style="width: 100.0%; height: 100.0%;">ID: 4895<br>Mineral: ['_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Chrysocolla_HS297_4B_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.0076761066049524295, 0.008149955105338393, 0.009317006094181962, 0.010950830586369219, 0.013880811150471198]<br>H2 ppm: 35.1</div>`)[0];
+                popup_28c2f84d8a4ae680e05a1fdcf322d283.setContent(html_96f4d67620e673fa9260dfd3a27ceca7);
+            
+        
+
+        circle_marker_4acf0a8a7622499d7fb47b2b2b80f908.bindPopup(popup_28c2f84d8a4ae680e05a1fdcf322d283)
+        ;
+
+        
+    
+    
+            var circle_marker_8c67742d73944ee67e3aa5f99c55a383 = L.circleMarker(
+                [70.5852, 120.4065],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.122636059578491, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_6bec688ac0855442aef811843e09e566 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_90db80b2292a2151d3cfb5278f1794da = $(`<div id="html_90db80b2292a2151d3cfb5278f1794da" style="width: 100.0%; height: 100.0%;">ID: 4896<br>Mineral: ['_S07SNTL2_Chrysocolla_HS297_3B_ASDFRb_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Chrysocolla_HS297_4B_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.00803805151575345, 0.008566828122762046, 0.011762718077847798, 0.01183955608513093, 0.015329507447311437]<br>H2 ppm: 81.1</div>`)[0];
+                popup_6bec688ac0855442aef811843e09e566.setContent(html_90db80b2292a2151d3cfb5278f1794da);
+            
+        
+
+        circle_marker_8c67742d73944ee67e3aa5f99c55a383.bindPopup(popup_6bec688ac0855442aef811843e09e566)
+        ;
+
+        
+    
+    
+            var circle_marker_b843c6b995db9b7cf67c3d25727a0820 = L.circleMarker(
+                [36.4436, 120.6518],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0997325187196925, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_01383401c8f302f40cd925b50d19aa49 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4bd73ba3824a8f30abf5c5fe3871430d = $(`<div id="html_4bd73ba3824a8f30abf5c5fe3871430d" style="width: 100.0%; height: 100.0%;">ID: 4897<br>Mineral: ['_S07SNTL2_Ulexite_HS441_4B_ASDFRa_AREF', '_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.006981488860511137, 0.0071507082801706, 0.008144142743973282, 0.008614780328997535, 0.012466564839961586]<br>H2 ppm: 12.5</div>`)[0];
+                popup_01383401c8f302f40cd925b50d19aa49.setContent(html_4bd73ba3824a8f30abf5c5fe3871430d);
+            
+        
+
+        circle_marker_b843c6b995db9b7cf67c3d25727a0820.bindPopup(popup_01383401c8f302f40cd925b50d19aa49)
+        ;
+
+        
+    
+    
+            var circle_marker_4aac774f6d3f72eec13ac9f66b6d88ab = L.circleMarker(
+                [-30.7611, 121.2639],
+                {"bubblingMouseEvents": true, "color": "rgb(2,0,252)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(2,0,252)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.07979499119879, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_f0e7740e00a534435af6e874373bf929 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a061489dbed9dd3eaada1c6e9207b09d = $(`<div id="html_a061489dbed9dd3eaada1c6e9207b09d" style="width: 100.0%; height: 100.0%;">ID: 4900<br>Mineral: ['_S07SNTL2_Olivine_HS420_4B_ASDFRc_AREF', '_S07SNTL2_Ulexite_HS441_4B_ASDFRa_AREF', '_S07SNTL2_Bronzite_HS9_3B_ASDFRc_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.006494313091606753, 0.0067682450126633, 0.006937298737752795, 0.007812605380211909, 0.009974373899848767]<br>H2 ppm: 1.123</div>`)[0];
+                popup_f0e7740e00a534435af6e874373bf929.setContent(html_a061489dbed9dd3eaada1c6e9207b09d);
+            
+        
+
+        circle_marker_4aac774f6d3f72eec13ac9f66b6d88ab.bindPopup(popup_f0e7740e00a534435af6e874373bf929)
+        ;
+
+        
+    
+    
+            var circle_marker_54f0a9c32828e77f48f621e61643bee6 = L.circleMarker(
+                [-30.761, 121.2639],
+                {"bubblingMouseEvents": true, "color": "rgb(2,0,252)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(2,0,252)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.080210637719309, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_d6741472bcf0b72b0b88e985c03a8df2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_de16c0c9218aed143cec5ffc6a1ac326 = $(`<div id="html_de16c0c9218aed143cec5ffc6a1ac326" style="width: 100.0%; height: 100.0%;">ID: 4903<br>Mineral: ['_S07SNTL2_Olivine_HS420_4B_ASDFRc_AREF', '_S07SNTL2_Ulexite_HS441_4B_ASDFRa_AREF', '_S07SNTL2_Bronzite_HS9_3B_ASDFRc_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.006519347896108219, 0.006796743554410525, 0.006983629134119725, 0.007846562764883795, 0.01002632971491355]<br>H2 ppm: 8.126</div>`)[0];
+                popup_d6741472bcf0b72b0b88e985c03a8df2.setContent(html_de16c0c9218aed143cec5ffc6a1ac326);
+            
+        
+
+        circle_marker_54f0a9c32828e77f48f621e61643bee6.bindPopup(popup_d6741472bcf0b72b0b88e985c03a8df2)
+        ;
+
+        
+    
+    
+            var circle_marker_dc5ef94e08de4166b146f501d56f93ae = L.circleMarker(
+                [-30.7613, 121.264],
+                {"bubblingMouseEvents": true, "color": "rgb(2,0,252)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(2,0,252)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.081018953192359, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_904edfa58417dee1a7e4c745ac45a29f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_010005954db19f19a4ee27fbc253a9bf = $(`<div id="html_010005954db19f19a4ee27fbc253a9bf" style="width: 100.0%; height: 100.0%;">ID: 4904<br>Mineral: ['_S07SNTL2_Olivine_HS420_4B_ASDFRc_AREF', '_S07SNTL2_Ulexite_HS441_4B_ASDFRa_AREF', '_S07SNTL2_Bronzite_HS9_3B_ASDFRc_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.006497891346081995, 0.006771781111682681, 0.006848719393417089, 0.007857145367286107, 0.010127369149044912]<br>H2 ppm: 42.731</div>`)[0];
+                popup_904edfa58417dee1a7e4c745ac45a29f.setContent(html_010005954db19f19a4ee27fbc253a9bf);
+            
+        
+
+        circle_marker_dc5ef94e08de4166b146f501d56f93ae.bindPopup(popup_904edfa58417dee1a7e4c745ac45a29f)
+        ;
+
+        
+    
+    
+            var circle_marker_b26df2fff08289f8dcfba2d7520747c1 = L.circleMarker(
+                [-30.7615, 121.2641],
+                {"bubblingMouseEvents": true, "color": "rgb(2,0,252)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(2,0,252)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.083279155989464, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_cb660c6468c74fd47be55ccef3d16bbd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9194844cac517fc440ed888b931f4ab2 = $(`<div id="html_9194844cac517fc440ed888b931f4ab2" style="width: 100.0%; height: 100.0%;">ID: 4905<br>Mineral: ['_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Bronzite_HS9_3B_ASDFRc_AREF', '_S07SNTL2_Ulexite_HS441_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.006622499090601814, 0.0067676087200676666, 0.006806470197175811, 0.007959488334202772, 0.010409894498682987]<br>H2 ppm: 1.266</div>`)[0];
+                popup_cb660c6468c74fd47be55ccef3d16bbd.setContent(html_9194844cac517fc440ed888b931f4ab2);
+            
+        
+
+        circle_marker_b26df2fff08289f8dcfba2d7520747c1.bindPopup(popup_cb660c6468c74fd47be55ccef3d16bbd)
+        ;
+
+        
+    
+    
+            var circle_marker_1aa312803de0386d4bb2cea7373d4ed2 = L.circleMarker(
+                [-30.762, 121.2642],
+                {"bubblingMouseEvents": true, "color": "rgb(2,0,252)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(2,0,252)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.082045032682493, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_3dfdf6c06d39055960ead8d945592821 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_71df534409bc17224e287b3260e2cbe0 = $(`<div id="html_71df534409bc17224e287b3260e2cbe0" style="width: 100.0%; height: 100.0%;">ID: 4906<br>Mineral: ['_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Bronzite_HS9_3B_ASDFRc_AREF', '_S07SNTL2_Ulexite_HS441_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.006583814073619792, 0.006744074020281966, 0.00676350003599876, 0.007888150444064988, 0.010255629085311586]<br>H2 ppm: 5.437</div>`)[0];
+                popup_3dfdf6c06d39055960ead8d945592821.setContent(html_71df534409bc17224e287b3260e2cbe0);
+            
+        
+
+        circle_marker_1aa312803de0386d4bb2cea7373d4ed2.bindPopup(popup_3dfdf6c06d39055960ead8d945592821)
+        ;
+
+        
+    
+    
+            var circle_marker_8f8d709540414a57c33fc90ea03998d8 = L.circleMarker(
+                [-30.7631, 121.2644],
+                {"bubblingMouseEvents": true, "color": "rgb(2,0,252)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(2,0,252)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.082131946956628, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_37a9289851c8ccda1b7325063aeb7bde = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_16b42356760404a9d4e17664c1c20a6d = $(`<div id="html_16b42356760404a9d4e17664c1c20a6d" style="width: 100.0%; height: 100.0%;">ID: 4908<br>Mineral: ['_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Ulexite_HS441_4B_ASDFRa_AREF', '_S07SNTL2_Bronzite_HS9_3B_ASDFRc_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.006580041559896707, 0.006797536682105756, 0.006829498098885613, 0.007915602286846969, 0.010266493369578475]<br>H2 ppm: 1.53</div>`)[0];
+                popup_37a9289851c8ccda1b7325063aeb7bde.setContent(html_16b42356760404a9d4e17664c1c20a6d);
+            
+        
+
+        circle_marker_8f8d709540414a57c33fc90ea03998d8.bindPopup(popup_37a9289851c8ccda1b7325063aeb7bde)
+        ;
+
+        
+    
+    
+            var circle_marker_d2e7c8996052920f91166705d97282d8 = L.circleMarker(
+                [63.7269, 121.6551],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.124122404892589, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_fd4c027c0f6aad76c1e215ba06e29226 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2e54446d25183c060bd3996d65f60d2f = $(`<div id="html_2e54446d25183c060bd3996d65f60d2f" style="width: 100.0%; height: 100.0%;">ID: 4909<br>Mineral: ['_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Chrysocolla_HS297_4B_ASDFRb_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.008276409359072234, 0.008469930247387993, 0.009024624984581564, 0.011531594854852134, 0.01551530061157362]<br>H2 ppm: 10</div>`)[0];
+                popup_fd4c027c0f6aad76c1e215ba06e29226.setContent(html_2e54446d25183c060bd3996d65f60d2f);
+            
+        
+
+        circle_marker_d2e7c8996052920f91166705d97282d8.bindPopup(popup_fd4c027c0f6aad76c1e215ba06e29226)
+        ;
+
+        
+    
+    
+            var circle_marker_45acd96626742c427167c5649b890d97 = L.circleMarker(
+                [-13.6687, 122.2756],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.1235601151405685, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_22283c9428771c52e82000d610d0b998 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7e7483f62759a641e649590c5c9a26ea = $(`<div id="html_7e7483f62759a641e649590c5c9a26ea" style="width: 100.0%; height: 100.0%;">ID: 4912<br>Mineral: ['_S07SNTL2_Jadeite_HS343_6_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.007663066229415494, 0.008047065620281313, 0.00905765060458418, 0.011010837863872186, 0.015445014392571097]<br>H2 ppm: 1.25</div>`)[0];
+                popup_22283c9428771c52e82000d610d0b998.setContent(html_7e7483f62759a641e649590c5c9a26ea);
+            
+        
+
+        circle_marker_45acd96626742c427167c5649b890d97.bindPopup(popup_22283c9428771c52e82000d610d0b998)
+        ;
+
+        
+    
+    
+            var circle_marker_e2db102258f17d3f9daa4c07b29ab13c = L.circleMarker(
+                [-13.6687, 122.2756],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.1235601151405685, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_6d42da3984aaf3858f4ee7b025cab9e5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_999b1cd18d0de47d8d4811e3f8680436 = $(`<div id="html_999b1cd18d0de47d8d4811e3f8680436" style="width: 100.0%; height: 100.0%;">ID: 4913<br>Mineral: ['_S07SNTL2_Jadeite_HS343_6_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.007663066229415494, 0.008047065620281313, 0.00905765060458418, 0.011010837863872186, 0.015445014392571097]<br>H2 ppm: 1.03</div>`)[0];
+                popup_6d42da3984aaf3858f4ee7b025cab9e5.setContent(html_999b1cd18d0de47d8d4811e3f8680436);
+            
+        
+
+        circle_marker_e2db102258f17d3f9daa4c07b29ab13c.bindPopup(popup_6d42da3984aaf3858f4ee7b025cab9e5)
+        ;
+
+        
+    
+    
+            var circle_marker_e511e004080693c6179c459e9ca56ca6 = L.circleMarker(
+                [-13.6687, 122.2756],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.1235601151405685, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_dbbdddb873bd02a7f643d2352d3c3a4d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_36f14e1e58053ced88046db79e29918a = $(`<div id="html_36f14e1e58053ced88046db79e29918a" style="width: 100.0%; height: 100.0%;">ID: 4914<br>Mineral: ['_S07SNTL2_Jadeite_HS343_6_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.007663066229415494, 0.008047065620281313, 0.00905765060458418, 0.011010837863872186, 0.015445014392571097]<br>H2 ppm: 1.52</div>`)[0];
+                popup_dbbdddb873bd02a7f643d2352d3c3a4d.setContent(html_36f14e1e58053ced88046db79e29918a);
+            
+        
+
+        circle_marker_e511e004080693c6179c459e9ca56ca6.bindPopup(popup_dbbdddb873bd02a7f643d2352d3c3a4d)
+        ;
+
+        
+    
+    
+            var circle_marker_600a1b359d57ac566f3221b5e048431e = L.circleMarker(
+                [-17.8601, 122.9331],
+                {"bubblingMouseEvents": true, "color": "rgb(2,0,252)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(2,0,252)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.067680336157885, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_9c2617e95f49162a394e459b3b175f3d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_95c964c97898e166643360c95d5c2fe7 = $(`<div id="html_95c964c97898e166643360c95d5c2fe7" style="width: 100.0%; height: 100.0%;">ID: 4915<br>Mineral: ['_S07SNTL2_Ulexite_HS441_4B_ASDFRa_AREF', '_S07SNTL2_Bronzite_HS9_4B_ASDFRc_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Bronzite_HS9_3B_ASDFRc_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.006503756877226547, 0.006812266620738152, 0.007188162064307008, 0.0072905806632284345, 0.008460042019735593]<br>H2 ppm: 1.54</div>`)[0];
+                popup_9c2617e95f49162a394e459b3b175f3d.setContent(html_95c964c97898e166643360c95d5c2fe7);
+            
+        
+
+        circle_marker_600a1b359d57ac566f3221b5e048431e.bindPopup(popup_9c2617e95f49162a394e459b3b175f3d)
+        ;
+
+        
+    
+    
+            var circle_marker_c20f473393b83d5a9afbf5941b2b63fd = L.circleMarker(
+                [-13.784, 123.4103],
+                {"bubblingMouseEvents": true, "color": "rgb(3,0,251)", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "rgb(3,0,251)", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.117891227812892, "stroke": true, "weight": 3}
+            ).addTo(map_62c01cfc6b28e3eb09cc43874f5e6390);
+        
+    
+        var popup_e253924b7318b04745ec456285fb62d4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_187c11e4f91f19987258108d8b00bd28 = $(`<div id="html_187c11e4f91f19987258108d8b00bd28" style="width: 100.0%; height: 100.0%;">ID: 4918<br>Mineral: ['_S07SNTL2_Jadeite_HS343_6_ASDFRb_AREF', '_S07SNTL2_Beryl_HS180_4B_ASDFRa_AREF', '_S07SNTL2_Cummingtonite_HS294_6_ASDFRc_AREF', '_S07SNTL2_Beryl_HS180_6_ASDFRa_AREF', '_S07SNTL2_Serpentine_HS8_6_ASDFRc_AREF']<br>Probability: [0.007407582966709351, 0.007743846402822551, 0.008900793646417188, 0.010234786650067806, 0.014736403476611568]<br>H2 ppm: 2.1</div>`)[0];
+                popup_e253924b7318b04745ec456285fb62d4.setContent(html_187c11e4f91f19987258108d8b00bd28);
+            
+        
+
+        circle_marker_c20f473393b83d5a9afbf5941b2b63fd.bindPopup(popup_e253924b7318b04745ec456285fb62d4)
+        ;
+
+        
+    
+</script>
+</html>
