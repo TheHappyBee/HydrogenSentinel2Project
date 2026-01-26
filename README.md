@@ -2,6 +2,12 @@
 
 The **Hydrogen Sentinel Project** analyzes mineralogical and spectral indicators relevant to hydrogen-related geologic processes using **Sentinel-2 multispectral imagery**. This project was conducted with significant assistance from **Dr. Jiajia Sun (University of Houston)**.
 
+
+Additionally, you may visit, pre-ran data:
+
+http://iemdc.s3-website-us-east-1.amazonaws.com/
+
+
 ---
 
 ## Repository Structure
