@@ -1,39 +1,76 @@
 # Hydrogen Sentinel Project
 
+The **Hydrogen Sentinel Project** analyzes mineralogical and spectral indicators relevant to hydrogen-related geologic processes using **Sentinel-2 multispectral imagery**. This project was conducted with significant assistance from **Dr. Jiajia Sun (University of Houston)**.
 
-The hydrogen Sentinel project was a project highly assisted by Dr Jiajia Sun from UH University
+---
 
+## Repository Structure
 
-Important files:
+### Code
 
-Code:
-./sider/integrator.py - the bulk of the project is here, contains ALL data extraction and processing
-functions: gets band data from sentinel 2, data preprocessing, spectral analysis and normalization, outputs to datafiles and csv
-prerequisites: associated USGS data (eg S07SNTL2)
+All source files are located in the [`sider/`](./sider) directory.
 
-./sider/scatterplot.py
-function: generation of mineral image files
-prerequisites: integrator.py must be run, example run already completed within this repo
+#### [`integrator.py`](./sider/integrator.py)
 
-./sider/barplot.py
-function: generation of figure 1
-prerequisites: integrator.py must be run
+**Description:** Core processing pipeline for the project.
 
-./sider/cluster.py
-function: generation of spectra stuff image
-prerequisites: integrator.py must be run
+* Extracts spectral band data from Sentinel-2 imagery
+* Performs data preprocessing and normalization
+* Conducts spectral analysis
+* Outputs processed results to data files and CSVs
 
+**Prerequisites:**
 
-Images:
-./sider/Olivine.png
-./sider/Brucite.png
-./sider/Cummingtonite.png
-./sider/Serpentine.png
-./sider/Figure_1.png
-./sider/spectrastuff.png
-were used on the poster and are fundemental to my research
+* Associated USGS datasets (e.g., `S07SNTL2`)
 
-Data files
-./api_features_coord.csv - coords extracted from arcgis
-./merged.cvv - combined point data
+---
 
+#### [`scatterplot.py`](./sider/scatterplot.py)
+
+**Description:** Generates mineral image visualizations.
+
+**Prerequisites:**
+
+* [`integrator.py`](./sider/integrator.py) must be run first
+* An example output is already included in this repository
+
+---
+
+#### [`barplot.py`](./sider/barplot.py)
+
+**Description:** Generates Figure 1 used in the research poster.
+
+**Prerequisites:**
+
+* [`integrator.py`](./sider/integrator.py) must be run first
+
+---
+
+#### [`cluster.py`](./sider/cluster.py)
+
+**Description:** Generates spectral clustering visualizations.
+
+**Prerequisites:**
+
+* [`integrator.py`](./sider/integrator.py) must be run first
+
+---
+
+## Images
+
+The following images were used in the research poster and are fundamental to this work:
+
+* [`Olivine.png`](./sider/Olivine.png)
+* [`Brucite.png`](./sider/Brucite.png)
+* [`Cummingtonite.png`](./sider/Cummingtonite.png)
+* [`Serpentine.png`](./sider/Serpentine.png)
+* [`Figure_1.png`](./sider/Figure_1.png)
+* [`spectrastuff.png`](./sider/spectrastuff.png)
+
+---
+
+## Notes
+
+* All paths use relative links for compatibility with GitHub and local clones.
+* `integrator.py` must be executed before running any visualization scripts.
+* All figures can be reproduced using the provided pipeline and datasets.
