@@ -76,7 +76,5 @@ The following images were used in the research poster and are fundamental to thi
 ---
 
 ## Notes
-
-* All paths use relative links for compatibility with GitHub and local clones.
 * `integrator.py` must be executed before running any visualization scripts.
 * All figures can be reproduced using the provided pipeline and datasets.
