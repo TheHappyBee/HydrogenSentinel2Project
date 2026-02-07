@@ -6,13 +6,13 @@ import os
 import re
 
 # -----------------------------
-# 1️⃣ Authenticate and initialize
+# 1. Authenticate and initialize
 # -----------------------------
 ee.Authenticate()
 ee.Initialize(project="experimentation-472813")
 
 # -----------------------------
-# 2️⃣ Load points
+# 2. Load points
 # -----------------------------
 start = 0
 for sp in range(0, 13):
@@ -48,7 +48,7 @@ for sp in range(0, 13):
     fc = fc.filter(ee.Filter.neq('Latitude', None))
 
     # -----------------------------
-    # 3️⃣ Define ROI and Sentinel-2 image
+    # 3. Define ROI and Sentinel-2 image
     # -----------------------------
     coords = points[['Longitude','Latitude']].values
     min_lon, min_lat = coords.min(axis=0)
@@ -85,7 +85,7 @@ for sp in range(0, 13):
 
 
     # -----------------------------
-    # 4️⃣ Load spectra from TXT files
+    # 4. Load spectra from TXT files
     # -----------------------------
     def getdata(file_path):
         data_values = []
@@ -191,7 +191,7 @@ for sp in range(0, 13):
             spectra_dict[sanitize_key(os.path.basename(full_path))] = data  # filename as key
 
     # -----------------------------
-    # 5️⃣ Spectral matching (SAM-based) function
+    # 5. Spectral matching (SAM-based) function
     # -----------------------------
     def sid_for_point(feature):
         # Reduce image bands to a dictionary of mean values at the feature
@@ -307,7 +307,7 @@ for sp in range(0, 13):
     fc_sid = fc.map(sid_for_point)
     
     # -----------------------------
-    # 6️⃣ Export to CSV
+    # 6. Export to CSV
     # -----------------------------
     task = ee.batch.Export.table.toDrive(
         collection=fc_sid,
@@ -315,9 +315,9 @@ for sp in range(0, 13):
         fileFormat='CSV'
     )
     task.start()
-
+    # uncomment this if you want to generate a folium map of the results
     # -----------------------------
-    # 7️⃣ Folium map
+    # 7. Folium map
     # -----------------------------
     # center = [points['Latitude'].mean(), points['Longitude'].mean()]
     # m = folium.Map(location=center, zoom_start=12)
