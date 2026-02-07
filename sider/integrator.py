@@ -272,9 +272,6 @@ for sp in range(0, 13):
         total = ee.Number(total).max(EPS)
         for k in prob_dict.keys():
             prob_dict[k] = ee.Number(prob_dict[k]).divide(total)
-
-        # Optionally add a detection threshold property: set to 1 if max prob > 0.4 else 0
-        # (consumer can tune threshold based on validation)
         probs_list = ee.List(list(prob_dict.values()))
         max_prob = probs_list.reduce(ee.Reducer.max())
         feature = feature.set({**sid_dict, **prob_dict})
